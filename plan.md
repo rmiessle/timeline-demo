@@ -1,4 +1,22 @@
 # TimelineJS Workshop Plan
+
+## Audience
+* Faculty, librarians, and anyone else who is interested in TimelineJS
+
+## Skill Level
+* Beginner
+
+## Time Required
+* 60-75 minutes
+
+## Technology Needed
+* Computer lab or individual laptops (tablets/phones not recommended)
+* Access to the Internet, Google Sheets, and a Google login
+
+## Technical Preparation
+* Create the Google Form and Sheet for the workshop
+* Use the [TimelineJS website](https://timeline.knightlab.com/#make) to create a link to the final timeline
+
 ## Learning Outcomes
 * Introduce timelines as a way to visualize data in a linear, sequential fashion 
 * Identify TimelineJS components and prepare a sample timeline 
@@ -48,26 +66,18 @@ Divide the workshop into X groups of X participants each. Each group reviews a t
 **Question for all, post-review: What common elements did we all see in the timelines?**
 
 ## Part 2: Elements of a TimelineJS Timeline
-[TimelineJS](http://timeline.knightlab.com/) was created by the [Knight Lab](https://knightlab.northwestern.edu/), part of Northwestern University, as a way to provide journalists a quick and easy way to build an interactive timeline that could be included with online news stories. It requires no programming or coding knowledge, although if you know HTML and CSS you can use those languages to add additional features to your timeline, such as links and different styles. 
+[TimelineJS](http://timeline.knightlab.com/) was created by the [Knight Lab](https://knightlab.northwestern.edu/), part of Northwestern University, as a way to provide journalists a quick and easy way to build an interactive timeline that could be included with online news stories. It requires no programming or coding knowledge, although if you know [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/html/html_css.asp) you can use them to add additional features to your timeline, such as links and different styles. 
 
-TimelineJS uses Google Sheets to create timelines. One way to do this is to copy the [TimelineJS Google Sheet template](https://docs.google.com/spreadsheets/d/1pHBvXN7nmGkiG8uQSUB82eNlnL8xHu6kydzH_-eguHQ/copy) from the TimelineJS website, fill it out, publish it to the web, and then copy and paste the link to the Sheet into their timeline creation tool. 
-
-[Example Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vTqQ6jAd56IZcis1yZ2tFC0QZxL851FUsmO6D2sAeQK9LqDhhAOJKamKC_S9ip3jWm7_vfyGBdD7rFW/pubhtml)
-
-From the example, each ROW on the timeline is an event. Each COLUMN corresponds to a different element that is part of the event. 
-
-While most users just directly input their data into the Sheet, you can also use a Google Form to populate a Google Sheet, which is what we are doing today to introduce you to the process. To start, we will go to our Google Form and you will create an event using the fields in the form. Then we will later look at it in the Google Sheet directly. This should give you a better understanding of how the different columns in the timeline are displaying their data.
+*Pull up [Super Mario Bros. TimelineJS example](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1h-zhsh60UoC0hHbsCu_isVHsBAw4pcLDS1tCcSEIDzI&font=OpenSans-GentiumBook&lang=en&initial_zoom=2&height=650)*
 
 ### TimelineJS Display Elements
 A TimelineJS timeline can roughly be broken into two parts, the **events**, and the **timeline**.
 #### Events
 Every TimelineJS timeline is made up of events, which have two parts: the media on the left, and the event text on the right. Either are optional - you can have only media, or only text. Events can use HTML and CSS to style text, create links, and do advanced things like create blockquotes, embed iFrames, etc.  
-##### Title Slide
-The title slide is the first "event" you see, if you create one. It shows up before any of the events, and acts as an introduction to the timeline. It's optional. It doesn't require any date data, and will ignore it if you put it in the Google Sheet.
 ##### Event Text
 Event text is broken up into three elements - the Display Date, the Headline, and the Text. 
 ###### Display Date
-The Display Date, by default is the date (or range of dates) for the event. You can override this to display custom text (such as using circa 1900, if your event date might be around the year 1900 CE) in order to show some "fuzziness" to the date.
+The Display Date, by default is the date (or range of dates) for the event. You can override this to display custom text (such as using circa 1900, if your event date might be around the year 1900 CE) in order to show some "fuzziness" to the date. This doesn't appear if it's a title event.
 ###### Headline
 The Headline should briefly introduce the topic/information on the event.
 ###### Text
@@ -85,15 +95,50 @@ By default, the background of an event is white. However, you can use the backgr
 #### Timeline
 At the bottom, all of your events are part of the overall timeline, which you can zoom in and out on.
 ##### Media Thumbnail
-Yet again, this should be a link to an image. However, this changes 
+Yet again, this should be a link to an image. This changes what the image in the little flag on the timeline is. Similarly to the background color, this could be a way to group similar events. 
 ##### Type
 By default, this is blank for a normal event. If you are creating a Title event, change to Title. If you are creating an Era, change to Era.
-###### Eras
+###### Title
+The title slide is the first "event" you see, if you create one. It shows up before any of the events, and acts as an introduction to the timeline. It's optional. It doesn't require any date data, and will ignore it if you put it in the Google Sheet.
+###### Era
 Eras create blocks of color that can differentiate different eras of time. These are created by having an event that has a start and and end date, and the event type is defined as an era. 
 ##### Groups
-You can create groups of events, by giving them the same group name in the Google Sheet. This creates a "sandwich" effect in the timeline, where each event is on the layer that corresponds with its group. Generally 3-4 groups is the most you should consider having.
+You can create groups of events, by giving them the same group name in the Google Sheet. This creates a "sandwich" effect in the timeline, where each event is on the layer that corresponds with its group. Generally 3-4 groups is the most you should consider having. Generally this should be a word, or a very short phrase (2-3 words, maximum).
 ### Other Options
 When you create your TimelineJS timeline, there are additional options you can set, such as the fonts for the text, if you want the timeline on the top or bottom, if you want to start from the end of the timeline, etc. 
+
+## Part 3: Creating a TimelineJS Timeline
+TimelineJS uses Google Sheets to create timelines. One way to do this is to copy the [TimelineJS Google Sheet template](https://docs.google.com/spreadsheets/d/1pHBvXN7nmGkiG8uQSUB82eNlnL8xHu6kydzH_-eguHQ/copy) from the TimelineJS website, fill it out, publish it to the web, and then copy and paste the link to the Sheet into their timeline creation tool. 
+
+[Example Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vTqQ6jAd56IZcis1yZ2tFC0QZxL851FUsmO6D2sAeQK9LqDhhAOJKamKC_S9ip3jWm7_vfyGBdD7rFW/pubhtml)
+
+From the example, each ROW on the timeline is an event. Each COLUMN corresponds to a different element that is part of the event. 
+
+While most users just directly input their data into the Sheet, you can also use a Google Form to populate a Google Sheet, which is what we are doing today to introduce you to the process. To start, we will go to our Google Form and you will create an event using the fields in the form. Then we will later look at it in the Google Sheet directly. This should give you a better understanding of how the different columns in the timeline are displaying their data.
+
+**Question: Before we start, we need a theme for our timeline. What do we want our theme to be?**
+* Favorite movie of all time
+* Favorite song, at the moment
+* Major news events in the 20th century
+
+*After the theme has been decided, pull up the Google Form for the workshop, and make sure everyone has access.*
+
+Experiment! Try new things. Nothing can be broken ... permanently.
+
+### Starting Date
+After you have your event, enter the starting date. At the very least, you need a year, but you can get as granular as hours and minutes. Everything should be a number. For BCE, enter a negative number.
+### Ending Date
+If your event is a singular moment in time, you don't need an ending date, but you can enter one if you want to show that your event is a span in time (for example, a 3-day-long music festival, or an insurrection that lasts a few hours).
+### Content
+This is where you should enter a headline and text for your event. If you want to have something different display for the date, instead of what you put in for the starting and ending date, you can put that in the display date.
+### Media
+Use this to put a link to media that's already on the Internet, such as an image or YouTube video. There is also a place for a caption and media credit, as well as a thumbnail image link.
+### Organization
+This is where you can change the event type to Title or Era, but leave blank for just a normal event. If you want to assign a group to your timeline, you can do that here as well. If you want to use a backgroung color or image for your event, use a hex code, or a link to an image. 
+
+*Submit, then pull up the Google Sheet for the form to watch everything roll in. Go to File > Share > Publish to allow the Sheet to be ingested by TimelineJS. Then load the TimelineJS timeline once a critical mass of events have been loaded.*
+
+*Work through the events, looking for common issues (duplicate title slides, broken media, challenging choices for backgrounds, etc. Fix things and reload the timeline to see what happens.*
 
 ## Best Practices, and Common Issues
 ### Common Issues
