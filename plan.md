@@ -145,12 +145,12 @@ To make your own TimelineJS timeline, go to the [TimelineJS website](https://tim
 
 ## Part 4: Best Practices, and Common Issues
 ### Common Issues
-* Broken image: this may mean the link isn't a link to an image (Wikimedia Commons photos are a big offender), the link has been taken down, or the link is configured in such a way that it doesn't allow it to be hotlinked to display on another website
-* Error fetching sheets data: the Google Sheet isn't published
+* Broken image: this may mean the link isn't a link to an image (Wikimedia Commons photos are a big offender - they look like they should work, but the link to the webpage AND the direct link to the image both end in an image format), the link has been taken down, or the link is configured in such a way that it doesn't allow it to be hotlinked to display on another website.
+* Error fetching sheets data: the Google Sheet isn't published.
 * Weird stuff started showing up: the Google Sheet may be set to be allowed to be edited by anyone, which isn't a good idea. If you are using it to create a collaborative timeline, then either invite users to edit it with a Google login, or change the access to view only when collaborative editing isn't needed anymore. 
 * Scroll bars appear with text: it's probably too much text, revise and resubmit.
 * Timeline doesn't update after making a change to Google Sheets: sometimes this takes a few minutes, be patient!
-* Other weirdness: sometimes a blank row will cause problems, or more than one title slide, or an era event without both start and end dates
+* Other weirdness: sometimes a blank row will cause problems, or more than one title slide, or an era event without both start and end dates.
 ### Best Practices
 Based off of what you have seen so far, both in the examples, and also what you have worked with today, let’s think of some best practices we can agree on. 
 
@@ -159,8 +159,7 @@ Based off of what you have seen so far, both in the examples, and also what you 
 * Presentation/Aesthetics 
 * Narrative/Story 
 * Usability 
-
-**Additional best practices**
+#### Best Practices to Reinforce
 * Have an argument! The timeline should have a theme and an argument it is trying to make.
 * Events should reinforce each other. You are telling a story with the timeline, so it should be clear why each event is on the timeline. Each event should be a part of the larger narrative. Large gaps in time on your timeline may cause your users to question what happened in the interim. 
 * Be clear and concise! Link out to other webpages instead of trying to put too much information on a single event. Your vent headline should reinforce the content and draw in users to read more. 
