@@ -32,18 +32,20 @@ Our brain encodes new experiences, but not familiar ones, into memory, and our r
 Most digital timelines and other similar tools use ISO standard date/time formats, which is based on a predominantly white, Euro-American conception of time. This doesn't mean standards are bad! But the idea that time is a left-to-right, top-to-bottom, linear progression reflects how we read, as well as how we perceive time. Think of the debate around Daylight Savings Time each year, and how we are willing to change how we perceive time because of how it conveniences/inconveniences us.  Time zones, meant to standardize time across countries based on longitudinal distance from Greenwich, England (another arbritrary choice) don't line up either (see [Asia Time Zones](https://www.timetemperature.com/asia/asia_time_zones.shtml)).
 
 ### Timeline Examples and Review
-Divide the workshop into X groups of X participants each. Each group reviews a timeline and briefly reports out after 5 minutes of analysis.
+Divide the workshop into X groups of X participants each. Each group reviews a timeline and briefly reports out after 5-7 minutes of analysis.
 * Group 1: [The Untold Story](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1tC5YnvokPvGWkwkxcyGeA9igftNws1Q0NkN47-VcGxQ&font=Default&lang=en&initial_zoom=2&height=700)
 * Group 2: [A Brief Introduction to Animal Liberation and Veganism](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1qLFux0t3qLaXk4H5K9cdSy-ZGdsxaOpqFnv4het3RXM&font=Default&lang=en&initial_zoom=2&height=650)
 * Group 3: [Lilith Through the Ages](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=15FgHpGsOUn46JbZFgi5VpElTpzKWwcHxyr1-sPGCGho&font=Default&lang=en&initial_zoom=2&height=650)
 * Group 4: [Children in Pittsburgh](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1kXV3p1ARuZLpoq5LUj_Gsro78gCVAKYNGdX9cIlgsN4&font=Default&lang=en&initial_zoom=2&height=650)
 
-*Review the responses with the workshop participants, and allow them to navigate through the timeline themselves if technology/time allows)
-
 #### Questions to Answer
 * What is the goal/theme of the timeline? 
 * What kinds of data/events are portrayed? 
 * Is this an effective use of a timeline? Do you understand the progression of events, see how each event fits into the larger narrative, does the timeline tell a story? 
+
+*Allow the participants 5-7 minutes to review, wander around and interact as needed. Review the responses with the workshop participants, and allow them to navigate through the timeline themselves if technology/time allows)*
+
+**Question for all, post-review: What common elements did we all see in the timelines?**
 
 ## Part 2: Elements of a TimelineJS Timeline
 [TimelineJS](http://timeline.knightlab.com/) was created by the [Knight Lab](https://knightlab.northwestern.edu/), part of Northwestern University, as a way to provide journalists a quick and easy way to build an interactive timeline that could be included with online news stories. It requires no programming or coding knowledge, although if you know HTML and CSS you can use those languages to add additional features to your timeline, such as links and different styles. 
@@ -61,11 +63,11 @@ A TimelineJS timeline can roughly be broken into two parts, the **events**, and 
 #### Events
 Every TimelineJS timeline is made up of events, which have two parts: the media on the left, and the event text on the right. Either are optional - you can have only media, or only text. Events can use HTML and CSS to style text, create links, and do advanced things like create blockquotes, embed iFrames, etc.  
 ##### Title Slide
-The title slide is the first "event" you see, if you create one. It shows up before any of the events, and acts as an introduction to the timeline. It's optional.
+The title slide is the first "event" you see, if you create one. It shows up before any of the events, and acts as an introduction to the timeline. It's optional. It doesn't require any date data, and will ignore it if you put it in the Google Sheet.
 ##### Event Text
 Event text is broken up into three elements - the Display Date, the Headline, and the Text. 
 ###### Display Date
-The Display Date, by default is the date (or range of dates) for the event. You can override this to display custom text (such as circa) in order to show some "fuzziness" to the date.
+The Display Date, by default is the date (or range of dates) for the event. You can override this to display custom text (such as using circa 1900, if your event date might be around the year 1900 CE) in order to show some "fuzziness" to the date.
 ###### Headline
 The Headline should briefly introduce the topic/information on the event.
 ###### Text
@@ -82,10 +84,14 @@ There is also a space to add a credit for the media. A best practice for media c
 By default, the background of an event is white. However, you can use the background color element of the event to turn the background a different color using [hex codes](https://www.w3schools.com/colors/colors_picker.asp). Hex codes are alphanumeric codes that start with a hash sign and have 6 numbers and/or letters. This can become an accessiblily issue, however, if you use a color without enough contrast for the text. Another option is to use a link to an image to create a background image for the event. Background colors can be a good way to "categorize" different slides - such as all events of one type with a white background, events of another type with a blue background, etc. 
 #### Timeline
 At the bottom, all of your events are part of the overall timeline, which you can zoom in and out on.
+##### Media Thumbnail
+Yet again, this should be a link to an image. However, this changes 
+##### Type
+By default, this is blank for a normal event. If you are creating a Title event, change to Title. If you are creating an Era, change to Era.
+###### Eras
+Eras create blocks of color that can differentiate different eras of time. These are created by having an event that has a start and and end date, and the event type is defined as an era. 
 ##### Groups
 You can create groups of events, by giving them the same group name in the Google Sheet. This creates a "sandwich" effect in the timeline, where each event is on the layer that corresponds with its group. Generally 3-4 groups is the most you should consider having.
-##### Eras
-Eras create blocks of color that can differentiate different eras of time. These are created by having an event that has a start and and end date, and the event type is defined as an era. 
 ### Other Options
 When you create your TimelineJS timeline, there are additional options you can set, such as the fonts for the text, if you want the timeline on the top or bottom, if you want to start from the end of the timeline, etc. 
 
