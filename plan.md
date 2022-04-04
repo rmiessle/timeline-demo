@@ -1,4 +1,4 @@
-# TimelineJS Lesson Plan
+# TimelineJS Workshop Plan
 ## Learning Outcomes
 * Introduce timelines as a way to visualize data in a linear, sequential fashion 
 * Identify TimelineJS components and prepare a sample timeline 
@@ -25,7 +25,7 @@ Timeline definition: Timelines, both analog and visual, are a form of data visua
 
 **Question: How does a timeline reflect dominant views of how we experience time?**
 
-Time is the “fourth dimension” but it is an element of our experience that we cannot change our place in. We can easily move in space (the other 3 dimensions) with enough will and force. However, we cannot move through time, other than the inevitable march forward. However, how we perceive time is very much on the personal experience of each person.
+Time is the “fourth dimension” but it is an element of our experience that we cannot change our place in. We can easily move in space (the other 3 dimensions) with enough will and force. However, we cannot move through time, other than the inevitable march forward. However, how we perceive time is very much on the personal experience of each person. There are additional challenges with how we move through time, especially as we approach the speed of light, but we will assume that we aren't doing that at the moment.
 
 Our brain encodes new experiences, but not familiar ones, into memory, and our retrospective judgment of time is based on how many new memories we create over a certain period. In other words, the more new memories we build on a weekend getaway, the longer that trip will seem in hindsight. [Why does time seem to speed up with age?](https://www.scientificamerican.com/article/why-does-time-seem-to-speed-up-with-age/)
 
@@ -44,20 +44,50 @@ Divide the workshop into X groups of X participants each. Each group reviews a t
 * Is this an effective use of a timeline? Do you understand the progression of events, see how each event fits into the larger narrative, does the timeline tell a story? 
 
 ## Part 2: Building a TimelineJS Timeline
-TimelineJS was created by the Knight Lab, part of Northwestern University, as a way to provide journalists a quick and easy way to build an interactive timeline that could be included with online news stories. It requires no programming or coding knowledge, although if you know HTML and CSS you can use those languages to add additional features to your timeline, such as links and different styles. 
+[TimelineJS](http://timeline.knightlab.com/) was created by the [Knight Lab](https://knightlab.northwestern.edu/), part of Northwestern University, as a way to provide journalists a quick and easy way to build an interactive timeline that could be included with online news stories. It requires no programming or coding knowledge, although if you know HTML and CSS you can use those languages to add additional features to your timeline, such as links and different styles. 
 
-TimelineJS uses Google Sheets to create timelines. One way to do this is to copy the TimelineJS Google Sheet template from the TimelineJS website, fill it out, and then copy and paste the link to the Sheet into their timeline creation tool. 
+TimelineJS uses Google Sheets to create timelines. One way to do this is to copy the [TimelineJS Google Sheet template](https://docs.google.com/spreadsheets/d/1pHBvXN7nmGkiG8uQSUB82eNlnL8xHu6kydzH_-eguHQ/copy) from the TimelineJS website, fill it out, publish it to the web, and then copy and paste the link to the Sheet into their timeline creation tool. 
 
 [Example Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vTqQ6jAd56IZcis1yZ2tFC0QZxL851FUsmO6D2sAeQK9LqDhhAOJKamKC_S9ip3jWm7_vfyGBdD7rFW/pubhtml)
 
-Each ROW on the timeline is an event. Each COLUMN corresponds to a different element that is part of the event. 
+From the example, each ROW on the timeline is an event. Each COLUMN corresponds to a different element that is part of the event. 
 
-While many users just directly input their data into the Sheet, you can also use a Google Form to populate a Google Sheet, which is what we are doing today to introduce you to the process. 
+While most users just directly input their data into the Sheet, you can also use a Google Form to populate a Google Sheet, which is what we are doing today to introduce you to the process. To start, we will go to our Google Form and you will create an event using the fields in the form. Then we will later look at it in the Google Sheet directly. This should give you a better understanding of how the different columns in the timeline are displaying their data.
 
-To start, we will go to our Google Form and you will create an event using the fields in the form. Then we will later look at it in the Google Sheet directly. This should give you a better understanding of how the different columns in the timeline are displaying their data. 
+### TimelineJS Display Elements
+A TimelineJS timeline can roughly be broken into two parts, the **events**, and the **timeline**.
+#### Events
+Every TimelineJS timeline is made up of events, which have two parts: the media on the left, and the event text on the right. Either are optional - you can have only media, or only text. 
+##### Title Slide
+The title slide is the first "event" you see, if you create one. It shows up before any of the events, and acts as an introduction to the timeline. It's optional.
+##### Event Text
+Event text is broken up into three elements - the Display Date, the Headline, and the Text. 
+###### Display Date
+The Display Date, by default is the date (or range of dates) for the event. You can override this to display custom text (such as circa) in order to show some "fuzziness" to the date.
+###### Headline
+The Headline should briefly introduce the topic/information on the event.
+###### Text
+The text should give additional information about the event itself. There's not a lot of real estate to work with here - think about 50-75 words. However, if your event needs more content, you can always use HTML to create a link to another webpage.
+##### Media
+Generally, you use links to media that already exist on the Internet as media on an event. TimelineJS allows for a wide variety of media to be used. In addition to images and videos, you can also embed Tweets, Google Maps, Soundcloud and Spotify audio, Wikipedia articles, another TimelineJS timeline ... really just about anything that is already on the Internet. Since you are linking to media that is already on the Internet, and not necessarily downloading it and uploading it to the timeline, there is a bit less to think about when it comes to copyright issues. However, if you are going to download images from the Internet and then store them elsewhere, such as on your own website, or on Google Drive, etc., it is usually best to look for [media files that are in the public domain, or have a license applied to them that allows them to be used freely](https://dh.sites.gettysburg.edu/toolkit/media/finding-images/).
 
-We have a sandbox form that we will use for this class session. After this class session, you can continue to use this sandbox form and Google Sheet to play around and try things. When it’s time to create your specific portion of the timeline for your assignment, you will have a separate form for each group. After you’ve done your events, then we will stitch all the spreadsheets together to make the final larger timeline. 
+One thing to note is that links to images should generally end with an image file format (such as .jpg, .png, .gif) - although images on Flickr don't require this.
+###### Caption
+Below the media, there is a space for a caption to give your media some additional context as to what it is, and why it is there. There isn't a lot of space here, so you need to be to the point. 
+###### Credit
+There is also a space to add a credit for the media. A best practice for media credits is to use the [TASL (Title, Author, Source, License) method of attribution](https://dh.sites.gettysburg.edu/toolkit/media/attribution/). Some media formats will automatically create citations, such as YouTube or Flickr. 
+##### Background
+By default, the background of an event is white. However, you can use the background color element of the event to turn the background a different color using [hex codes](https://www.w3schools.com/colors/colors_picker.asp). Hex codes are alphanumeric codes that start with a hash sign and have 6 numbers and/or letters. This can become an accessiblily issue, however, if you use a color without enough contrast for the text. Another option is to use a link to an image to create a background image for the event. Background colors can be a good way to "categorize" different slides - such as all events of one type with a white background, events of another type with a blue background, etc. 
+#### Timeline
+At the bottom, all of your events are part of the overall timeline, which you can zoom in and out on.
+##### Groups
+You can create groups of events, by giving them the same group name in the Google Sheet. This creates a "sandwich" effect in the timeline, where each event is on the layer that corresponds with its group. Generally 3-4 groups is the most you should consider having.
+##### Eras
+Eras create blocks of color that can differentiate different eras of time. These are created by having an event that has a start and and end date, and the event type is defined as an era. 
+### Other Options
+When you create your TimelineJS timeline, there are additional options you can set, such as the fonts for the text, 
 
-### Finding Media 
 
-TimelineJS allows for a wide variety of media to be used. In addition to images and videos, you can also embed Tweets, maps, Soundcloud and Spotify audio, Wikipedia articles … really just about anything. Since you are linking to media, and not necessarily downloading it and uploading it to the timeline, there is a bit less to think about when it comes to copyright issues. However, it is usually best to look for media files that are in the public domain, or have a license applied to them that allows them to be used freely.
+
+
+
