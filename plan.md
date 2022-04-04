@@ -138,9 +138,12 @@ This is where you can change the event type to Title or Era, but leave blank for
 
 *Submit, then pull up the Google Sheet for the form to watch everything roll in. Go to File > Share > Publish to allow the Sheet to be ingested by TimelineJS. Then load the TimelineJS timeline once a critical mass of events have been loaded.*
 
-*Work through the events, looking for common issues (duplicate title slides, broken media, challenging choices for backgrounds, etc. Fix things and reload the timeline to see what happens.*
+*Work through the events, looking for common issues (duplicate title slides, broken media, weird eras, groups not working right, challenging choices for backgrounds, etc. Fix things in the Google Sheet and reload the timeline to see what happens.*
 
-## Best Practices, and Common Issues
+### Making Your Own TimelineJS Timeline
+To make your own TimelineJS timeline, go to the [TimelineJS website](https://timeline.knightlab.com/#make) and follow the directions! You will get a link to a Google Sheets template that you can copy into your own Google Drive, then you can clear that out and start your own timeline. Publish the Google Sheet, copy and paste the URL of the timeline into the website, and you'll have a link to your own timeline that you can use on its own, or embed into another website.
+
+## Part 4: Best Practices, and Common Issues
 ### Common Issues
 * Broken image: this may mean the link isn't a link to an image (Wikimedia Commons photos are a big offender), the link has been taken down, or the link is configured in such a way that it doesn't allow it to be hotlinked to display on another website
 * Error fetching sheets data: the Google Sheet isn't published
