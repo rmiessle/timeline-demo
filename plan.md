@@ -66,7 +66,7 @@ Divide the workshop into X groups of X participants each. Each group reviews a t
 **Question for all, post-review: What common elements did we all see in the timelines?**
 
 ## Part 2: Elements of a TimelineJS Timeline
-[TimelineJS](http://timeline.knightlab.com/) was created by the [Knight Lab](https://knightlab.northwestern.edu/), part of Northwestern University, as a way to provide journalists a quick and easy way to build an interactive timeline that could be included with online news stories. It requires no programming or coding knowledge, although if you know [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/html/html_css.asp) you can use them to add additional features to your timeline, such as links and different styles. 
+[TimelineJS](http://timeline.knightlab.com/) is an open source digital tool that was created by the [Knight Lab](https://knightlab.northwestern.edu/), part of Northwestern University, as a way to provide journalists a quick and easy way to build an interactive timeline that could be included with online news stories. It requires no programming or coding knowledge, although if you know [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/html/html_css.asp) you can use them to add additional features to your timeline, such as links and different styles. 
 
 *Pull up [Super Mario Bros. TimelineJS example](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1h-zhsh60UoC0hHbsCu_isVHsBAw4pcLDS1tCcSEIDzI&font=OpenSans-GentiumBook&lang=en&initial_zoom=2&height=650)*
 
