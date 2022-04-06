@@ -1,7 +1,7 @@
 # TimelineJS Workshop Plan
 
 ## Audience
-* Faculty, librarians, and anyone else who is interested in TimelineJS
+* Faculty, librarians, students, and anyone else who is interested in TimelineJS
 
 ## Skill Level
 * Beginner
@@ -45,9 +45,9 @@ Timeline definition: Timelines, both analog and visual, are a form of data visua
 
 Time is the “fourth dimension” but it is an element of our experience that we cannot change our place in. We can easily move in space (the other 3 dimensions) with enough will and force. However, we cannot move through time, other than the inevitable march forward. However, how we perceive time is very much on the personal experience of each person. There are additional challenges with how we move through time, especially as we approach the speed of light, but we will assume that we aren't doing that at the moment.
 
-Our brain encodes new experiences, but not familiar ones, into memory, and our retrospective judgment of time is based on how many new memories we create over a certain period. In other words, the more new memories we build on a weekend getaway, the longer that trip will seem in hindsight. [Why does time seem to speed up with age?](https://www.scientificamerican.com/article/why-does-time-seem-to-speed-up-with-age/)
+Our brain encodes new experiences, but not familiar ones, into memory, and our retrospective judgment of time is based on how many new memories we create over a certain period. In other words, the more new memories we build on a weekend getaway, the longer that trip will seem in hindsight. See "[Why does time seem to speed up with age?](https://www.scientificamerican.com/article/why-does-time-seem-to-speed-up-with-age/)" for some additional information on this concept.
 
-Most digital timelines and other similar tools use ISO standard date/time formats, which is based on a predominantly white, Euro-American conception of time. This doesn't mean standards are bad! But the idea that time is a left-to-right, top-to-bottom, linear progression reflects how we read, as well as how we perceive time. Think of the debate around Daylight Savings Time each year, and how we are willing to change how we perceive time because of how it conveniences/inconveniences us.  Time zones, meant to standardize time across countries based on longitudinal distance from Greenwich, England (another arbritrary choice) don't line up either (see [Asia Time Zones](https://www.timetemperature.com/asia/asia_time_zones.shtml)).
+Most digital timelines and other similar tools use ISO standard date/time formats, which is based on a predominantly Western conception of time. This doesn't mean standards are bad! But the idea that time is a left-to-right, top-to-bottom, linear progression reflects how we read, as well as how we perceive time. But how we deal with time is also fluid. Think of the debate around Daylight Savings Time each year, and how we are willing to change how we perceive time because of how it conveniences/inconveniences us.  Time zones, meant to standardize time across countries (to make the trains run on time) based on longitudinal distance from Greenwich, England (another arbritrary choice) don't line up either (see [Asia Time Zones](https://www.timetemperature.com/asia/asia_time_zones.shtml)).
 
 ### Timeline Examples and Review
 Divide the workshop into X groups of X participants each. Each group reviews a timeline and briefly reports out after 5-7 minutes of analysis.
@@ -59,11 +59,14 @@ Divide the workshop into X groups of X participants each. Each group reviews a t
 #### Questions to Answer
 * What is the goal/theme of the timeline? 
 * What kinds of data/events are portrayed? 
-* Is this an effective use of a timeline? Do you understand the progression of events, see how each event fits into the larger narrative, does the timeline tell a story? 
+* Is this an effective use of a timeline? Do you understand the progression of events, see how each event fits into the larger narrative, and does the timeline tell a story? 
 
-*Allow the participants 5-7 minutes to review, wander around and interact as needed. Review the responses with the workshop participants, and allow them to navigate through the timeline themselves if technology/time allows)*
+*Allow the participants 5-7 minutes to review, wander around and interact as needed. Ask each group to report out their responses with the workshop participants, and allow them to navigate through the timeline themselves if technology/time allows, or do it from the main PC yourself)*
 
 **Question for all, post-review: What common elements did we all see in the timelines?**
+* Presentation/aesthetics
+* Narrative/story
+* Usability
 
 ## Part 2: Elements of a TimelineJS Timeline
 [TimelineJS](http://timeline.knightlab.com/) is an open source digital tool that was created by the [Knight Lab](https://knightlab.northwestern.edu/), part of Northwestern University, as a way to provide journalists a quick and easy way to build an interactive timeline that could be included with online news stories. It requires no programming or coding knowledge, although if you know [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/html/html_css.asp) you can use them to add additional features to your timeline, such as links and different styles. 
@@ -91,7 +94,7 @@ Below the media, there is a space for a caption to give your media some addition
 ###### Credit
 There is also a space to add a credit for the media. A best practice for media credits is to use the [TASL (Title, Author, Source, License) method of attribution](https://dh.sites.gettysburg.edu/toolkit/media/attribution/). Some media formats will automatically create citations, such as YouTube or Flickr. 
 ##### Background
-By default, the background of an event is white. However, you can use the background color element of the event to turn the background a different color using [hex codes](https://www.w3schools.com/colors/colors_picker.asp). Hex codes are alphanumeric codes that start with a hash sign and have 6 numbers and/or letters. This can become an accessiblily issue, however, if you use a color without enough contrast for the text. Another option is to use a link to an image to create a background image for the event. Background colors can be a good way to "categorize" different slides - such as all events of one type with a white background, events of another type with a blue background, etc. 
+By default, the background color of an event is white. However, you can use the background color element of the event to turn the background a different color using [hex codes](https://www.w3schools.com/colors/colors_picker.asp). Hex codes are alphanumeric codes that start with a hash sign and have 6 numbers and/or letters (for example, #000000 is black, #FFFFFF is white, #9370DB is medium purple). This can become an accessiblily issue, however, if you use a color without enough contrast for the text. Another option is to use a link to an image to create a background image for the event. Background colors can be a good way to "categorize" different slides - such as all events of one type with a white background, events of another type with a blue background, etc. 
 #### Timeline
 At the bottom, all of your events are part of the overall timeline, which you can zoom in and out on.
 ##### Media Thumbnail
@@ -99,7 +102,7 @@ Yet again, this should be a link to an image. This changes what the image in the
 ##### Type
 By default, this is blank for a normal event. If you are creating a Title event, change to Title. If you are creating an Era, change to Era.
 ###### Title
-The title slide is the first "event" you see, if you create one. It shows up before any of the events, and acts as an introduction to the timeline. It's optional. It doesn't require any date data, and will ignore it if you put it in the Google Sheet.
+The title slide is the first "event" you see, if you create one. It shows up before any of the events, and acts as an introduction to the timeline. It's optional. It doesn't require any date data, and TimelineJS will ignore data information it if you put it in the Google Sheet.
 ###### Era
 Eras create blocks of color that can differentiate different eras of time. These are created by having an event that has a start and and end date, and the event type is defined as an era. 
 ##### Groups
@@ -108,7 +111,7 @@ You can create groups of events, by giving them the same group name in the Googl
 When you create your TimelineJS timeline, there are additional options you can set, such as the fonts for the text, if you want the timeline on the top or bottom, if you want to start from the end of the timeline, etc. 
 
 ## Part 3: Creating a TimelineJS Timeline
-TimelineJS uses Google Sheets to create timelines. One way to do this is to copy the [TimelineJS Google Sheet template](https://docs.google.com/spreadsheets/d/1pHBvXN7nmGkiG8uQSUB82eNlnL8xHu6kydzH_-eguHQ/copy) from the TimelineJS website, fill it out, publish it to the web, and then copy and paste the link to the Sheet into their timeline creation tool. 
+TimelineJS uses Google Sheets to create timelines. The best way to do this is to copy the [TimelineJS Google Sheet template](https://docs.google.com/spreadsheets/d/1pHBvXN7nmGkiG8uQSUB82eNlnL8xHu6kydzH_-eguHQ/copy) from the TimelineJS website, fill it out, publish it to the web, and then copy and paste the link to the Sheet into their timeline creation tool. 
 
 [Example Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vTqQ6jAd56IZcis1yZ2tFC0QZxL851FUsmO6D2sAeQK9LqDhhAOJKamKC_S9ip3jWm7_vfyGBdD7rFW/pubhtml)
 
@@ -123,7 +126,7 @@ While most users just directly input their data into the Sheet, you can also use
 
 *After the theme has been decided, pull up the Google Form for the workshop, and make sure everyone has access.*
 
-Experiment! Try new things. Nothing can be broken ... permanently.
+As we move through this exercise, experiment! Try new things. Nothing can be broken ... permanently.
 
 ### Starting Date
 After you have your event, enter the starting date. At the very least, you need a year, but you can get as granular as hours and minutes. Everything should be a number. For BCE, enter a negative number.
@@ -132,9 +135,9 @@ If your event is a singular moment in time, you don't need an ending date, but y
 ### Content
 This is where you should enter a headline and text for your event. If you want to have something different display for the date, instead of what you put in for the starting and ending date, you can put that in the display date.
 ### Media
-Use this to put a link to media that's already on the Internet, such as an image or YouTube video. There is also a place for a caption and media credit, as well as a thumbnail image link.
+Use this to put a link to media that's already on the Internet, such as a link to an image from Google image search, or a YouTube video. There is also a place for a caption and media credit, as well as a thumbnail image link.
 ### Organization
-This is where you can change the event type to Title or Era, but leave blank for just a normal event. If you want to assign a group to your timeline, you can do that here as well. If you want to use a backgroung color or image for your event, use a hex code, or a link to an image. 
+This is where you can change the event type to Title or Era, but leave blank for just a normal event. If you want to assign a group to your event, you can do that here as well. If you want to use a backgroung color or image for your event, use a hex code, or a link to an image. 
 
 *Submit, then pull up the Google Sheet for the form to watch everything roll in. Go to File > Share > Publish to allow the Sheet to be ingested by TimelineJS. Then load the TimelineJS timeline once a critical mass of events have been loaded.*
 
@@ -160,11 +163,11 @@ Based off of what you have seen so far, both in the examples, and also what you 
 * Narrative/Story 
 * Usability 
 #### Best Practices to Reinforce
-* Have an argument! The timeline should have a theme and an argument it is trying to make.
+* Have an argument or narrative! The timeline should have a theme, story, or argument it is trying to make.
 * Events should reinforce each other. You are telling a story with the timeline, so it should be clear why each event is on the timeline. Each event should be a part of the larger narrative. Large gaps in time on your timeline may cause your users to question what happened in the interim. 
-* Be clear and concise! Link out to other webpages instead of trying to put too much information on a single event. Your vent headline should reinforce the content and draw in users to read more. 
+* Be clear and concise! Include links to other webpages instead of trying to put too much information on a single event. Your vent headline should reinforce the content and draw in users to read more. 
 * Keep data in multiple places – in case the Google Sheet has a glitch, or if something gets accidentally erased, you want to make sure your data isn’t only living in one place. 
-* Pick media that reinforce the event and your text. Always include a caption that provides some additional context for your image, and a credit to the original. Never assume that your users will see your picture and know what it is. Giving credit back to the original creator is the ethical thing to do. 
+* Pick media that reinforce the event and your text. Always include a caption that provides some additional context for your image, and a credit to the original. Never assume that your users will see your media and know what it is. Giving credit back to the original creator is the ethical thing to do. 
 * Crediting media 
   * At the very least, you should include: 
     * The title of the media 
@@ -173,7 +176,11 @@ Based off of what you have seen so far, both in the examples, and also what you 
   * Don’t worry about things like trying to do indents or italics, this isn’t citation, it is attribution.
 
 ## Final Questions to Ponder
+### For Faculty
 * How do you think you might use TimelineJS for a classroom activity, assignment/project, and/or your own research?
 * What do you feel comfortable doing on your own, or what things would you need additional support for (either synchronously, such as a training session, or asynchronously, such as video tutorials)?
 * How would you grade/assess a timeline that you might use as part of an assignment? What rubrics/specifications would you give students to consider as they build their own timelines?
-
+### For Students
+* How could you see a TimelineJS enhancing a traditional assignment, such as a paper?
+* What limitations does TimelineJS have that would require you to have some additional context, such as placing it inside a larger website, or including some additional text outside of the timeline to explain it?
+* What additional resources would help you create and troubleshoot your timelines?
